@@ -28,7 +28,7 @@
                             <td>{{ $luotChoi->diem }}</td>
                             <td>{{ $luotChoi->ngay_gio }}</td>
                             <td>
-                            	<a href="{{ route('luot-choi.khoi-phuc', ['id' => $luotChoi->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-pencil"></i></a>
+                            	<a href="{{ route('luot-choi.khoi-phuc', ['id' => $luotChoi->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-restore"></i></a>
                             	<a href="{{ route('luot-choi.xoa-csdl', ['id' => $luotChoi->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
                             </td>
                         </tr>

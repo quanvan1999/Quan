@@ -67,7 +67,8 @@ class NguoiChoiController extends Controller
 
 
         $nguoiChoi->save();
-       return redirect()->route('nguoi-choi.danh-sach');    
+        $request->session()->flash('success', 'Thêm thành công!');
+       return redirect()->route('nguoi-choi.them-moi');    
    }
 
     /**

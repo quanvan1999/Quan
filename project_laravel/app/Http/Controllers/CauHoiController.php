@@ -50,7 +50,8 @@ class CauHoiController extends Controller
         $cauHoi->phuong_an_d=$request->phuong_an_d;
         $cauHoi->dap_an=$request->dap_an;
         $cauHoi->save();
-       return redirect()->route('cau-hoi.danh-sach');
+        $request->session()->flash('success', 'Thêm thành công!');
+       return redirect()->route('cau-hoi.them-moi');
 
     }
 

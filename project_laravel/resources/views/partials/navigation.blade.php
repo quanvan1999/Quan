@@ -380,18 +380,11 @@
                             
                         <li class="has-submenu">
                         <a href="{{ route('luot-choi.danh-sach') }}"> <i class="la la-briefcase"></i>Lượt chơi <div class="arrow-down"></div></a>
-                         <ul class="submenu">
-                            <li>
-                                <a href="{{ route('luot-choi.thung-rac') }}">Thùng rác</a>
-                            </li>
-                        </ul>
+                         
                     </li>
                        <li class="has-submenu">
-                        <a href="{{ route('thong-ke') }}"> <i class="la la-briefcase"></i>Thống kê <div class="arrow-down"></div></a>
-                         <ul class="submenu">
-                            <li>
-                            </li>
-                        </ul>
+                        <a href="{{ route('thong-ke') }}"> <i class="la la-dashboard"></i>Thống kê <div class="arrow-down"></div></a>
+                        
                     </li>
                     
 

@@ -4,15 +4,11 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\User;
-use JWTAuth;
-use JWTAuthException;
-use Hash;
 
 class NguoiChoiLoginController extends Controller
 {
     
-    public function login(Request $request){
+    public function dangNhap(Request $request){
         $credentials = [
             'ten_dang_nhap' => $request->ten_dang_nhap,
             'password'      => $request->mat_khau
@@ -32,7 +28,8 @@ class NguoiChoiLoginController extends Controller
     }
 
     
-    public function getUser(){
+    public function layThongTin()
+    {
         return auth('api')->user();
     }
 }

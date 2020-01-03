@@ -30,7 +30,7 @@
                             <td>{{ $qTV->email }}</td>
                             <td>{{ $qTV->anh_dai_dien }}</td>
                             <td>
-                                <a href="{{ route('quan-tri-vien.khoi-phuc', ['id' => $qTV->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-pencil"></i></a>
+                                <a href="{{ route('quan-tri-vien.khoi-phuc', ['id' => $qTV->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-restore"></i></a>
                                 <a href="{{ route('quan-tri-vien.xoa-csdl', ['id' => $qTV->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
                             </td>
                         </tr>

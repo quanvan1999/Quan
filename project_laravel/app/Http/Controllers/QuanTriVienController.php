@@ -66,7 +66,8 @@ class QuanTriVienController extends Controller
             $avatar->move("assets/images/admin",$hinh);
             $qTV->anh_dai_dien=$hinh;
         }        $qTV->save();
-       return redirect()->route('quan-tri-vien.danh-sach');    
+        $request->session()->flash('success', 'Thêm thành công!');
+       return redirect()->route('quan-tri-vien.them-moi');    
     }
 
     /**

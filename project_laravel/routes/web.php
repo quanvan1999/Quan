@@ -18,7 +18,7 @@ Route::get('dang-xuat','QuanTriVienController@dangXuat')->name('dang-xuat');
 Route::get('quen-mat-khau', 'Auth\ForgotPasswordController@getResetPass')->name('quen-mk');
 Route::post('quen-mat-khau', 'Auth\ForgotPasswordController@sendMail')->name('xl-quen-mk');
 
-
+Route::post('quen-mat-khau', 'Auth\ForgotPasswordController@sendMail')->name('xl-quen-mk');
 
 Route::post('dang-nhap','QuanTriVienController@xuLyDangNhap')->name('xu-ly-dang-nhap');
 Route::middleware('auth')->group(function(){
@@ -91,9 +91,9 @@ Route::middleware('auth')->group(function(){
      Route::prefix('luot-choi')->group(function(){
           Route::get('/', 'LuotChoiController@index')->name('luot-choi.danh-sach');
           Route::get('/chi-tiet/{id}','LuotChoiController@chiTietLuotChoi')->name('luot-choi.chi-tiet');
-          Route::get('xoa/{id}', 'LuotChoiController@destroy')->name('luot-choi.xoa'); 
+         /* Route::get('xoa/{id}', 'LuotChoiController@destroy')->name('luot-choi.xoa'); 
           Route::get('xoa-csdl/{id}', 'LuotChoiController@destroySQL')->name('luot-choi.xoa-csdl');
           Route::get('thung-rac', 'LuotChoiController@trash')->name('luot-choi.thung-rac');
-          Route::get('thung-rac/{id}', 'LuotChoiController@restore')->name('luot-choi.khoi-phuc');
+          Route::get('thung-rac/{id}', 'LuotChoiController@restore')->name('luot-choi.khoi-phuc'); */
       });
  });

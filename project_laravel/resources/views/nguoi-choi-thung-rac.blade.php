@@ -33,7 +33,7 @@
                             <td>{{ $nguoiChoi->diem_cao_nhat }}</td>
                             <td>{{ $nguoiChoi->credit }}</td>
                             <td>
-                                <a href="{{ route('nguoi-choi.khoi-phuc', ['id' => $nguoiChoi->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-pencil"></i></a>
+                                <a href="{{ route('nguoi-choi.khoi-phuc', ['id' => $nguoiChoi->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-restore"></i></a>
                                 <a href="{{ route('nguoi-choi.xoa-csdl', ['id' => $nguoiChoi->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
                             </td>
                         </tr>

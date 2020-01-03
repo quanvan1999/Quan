@@ -18,7 +18,10 @@ Route::get('nguoi-choi/{id}','API\NguoiChoiController@layNguoiChoi');
 Route::get('diem-cao/','API\NguoiChoiController@top10');	
 Route::post('dang-nhap','API\NguoiChoiController@DangNhap');
 Route::get('nguoi-choi','API\NguoiChoiController@layDSNguoiChoi');
-Route::post('dang-nhap', 'API\NguoiChoiLoginController@login');
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('dang-nhap','API\NguoiChoiLoginController@dangNhap');
+
+Route::middleware(['assign.guard:api', 'jwt.auth'])->group(function()
+{
+	Route::get('lay-thong-tin','API\NguoiChoiLoginController@layThongTin');
+
 });

@@ -36,7 +36,7 @@
 
             <div class="card-body">
                	<p><a href="{{ route('nguoi-choi.them-moi') }}" type="button"  class="btn btn-primary btn-rounded waves-effect waves-light">Thêm mới</a></p>
-                <table id="linh-vuc-datatable" class="table dt-responsive">
+                <table id="linh-vuc-datatable" class="table dt-responsive ">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -62,8 +62,9 @@
                             <td>{{ $nguoiChoi->diem_cao_nhat }}</td>
                             <td>{{ $nguoiChoi->credit }}</td>
                             <td>
-                            <a role="button" href="{{ route('nguoi-choi.lich-su',$nguoiChoi->id) }}"class="btn btn-info waves-effect waves-light">Lịch sử mua credit</a>
+                            	<a role="button" href="{{ route('nguoi-choi.lich-su',$nguoiChoi->id) }}"class="btn btn-info waves-effect waves-light">Lịch sử</a>
                             	<a href="{{ route('nguoi-choi.xoa', ['id' => $nguoiChoi->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
+
                             </td>
                         </tr>
                         @endforeach

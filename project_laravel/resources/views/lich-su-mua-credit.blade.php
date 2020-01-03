@@ -8,7 +8,7 @@
 				<table id="linh-vuc-datatable" class="table dt-responsive nowrap">
 					<thead>
 						<tr>
-							<th>ID gói credit</th>
+							<th>ID</th>
 							<th>Credit</th>
 							<th>Số tiền</th>
 							<th></th>
@@ -17,7 +17,7 @@
 					<tbody>
 						@foreach($lichSuMuaCredit as $nguoiChoi)
 						<tr>
-							<td>{{$nguoiChoi->goi_credit_id}}</td>
+							<td>{{$nguoiChoi->id}}</td>
 							<td>
 								{{ isset(App\GoiCredit::find($nguoiChoi->goi_credit_id)->credit) ? App\GoiCredit::find($nguoiChoi->goi_credit_id)->credit : 'Gói credit đã bị xóa' }}
 							</td>

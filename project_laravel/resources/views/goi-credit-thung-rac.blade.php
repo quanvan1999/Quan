@@ -26,7 +26,7 @@
                             <td>{{ $goiCredit->credit }}</td>
                             <td>{{ $goiCredit->so_tien }}</td>
                             <td>
-                                <a href="{{ route('goi-credit.khoi-phuc', ['id' => $goiCredit->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-pencil"></i></a>
+                                <a href="{{ route('goi-credit.khoi-phuc', ['id' => $goiCredit->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-restore"></i></a>
                                 <a href="{{ route('goi-credit.xoa-csdl', ['id' => $goiCredit->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
                             </td>
                         </tr>

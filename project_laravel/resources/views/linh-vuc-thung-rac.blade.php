@@ -22,7 +22,7 @@
                             <td>{{ $linhVuc->id }}</td>
                             <td>{{ $linhVuc->ten_linh_vuc }}</td>
                             <td>
-                            	<a href="{{ route('linh-vuc.khoi-phuc', ['id' => $linhVuc->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-pencil"></i></a>
+                            	<a href="{{ route('linh-vuc.khoi-phuc', ['id' => $linhVuc->id]) }}" class="btn btn-success waves-effect waves-light"><i class="mdi mdi-restore"></i></a>
                             	<a href="{{ route('linh-vuc.xoa-csdl', ['id' => $linhVuc->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
                             </td>
                         </tr>

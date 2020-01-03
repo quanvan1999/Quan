@@ -58,7 +58,7 @@
                             <td>{{ $luotChoi->ngay_gio }}</td>
                             <td>
                             	<a role="button" href="{{ route('luot-choi.chi-tiet',$luotChoi->id) }}"class="btn btn-info waves-effect waves-light">Chi tiết lượt chơi</a>
-                            	<a href="{{ route('luot-choi.xoa', ['id' => $luotChoi->id]) }}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-delete"></i></a>
+                            
                             </td>
                         </tr>
                         @endforeach

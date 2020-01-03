@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
        $this->call(ThemQuanTriVienSeeder::class);
        $this->call(ThemGoiCreDitSeeder::class);
        $this->call(ThemLuotChoiSeeder::class);
+       $this->call(ThemChiTietLuotChoiSeeder::class);
+       $this->call(ThemLichSuMuaCreDitSeeder::class);
 
     }
 }

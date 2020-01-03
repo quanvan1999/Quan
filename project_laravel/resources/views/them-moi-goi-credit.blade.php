@@ -18,6 +18,9 @@
                                 @endif   
                         <div class="card">
                             <div class="card-body">
+                                @if (session('success'))
+                                <div class="alert alert-info">{{session('success')}}</div>
+                                @endif
                                 <h4 class="mb-3 header-title">@if(isset($goiCredit)) Cập nhật @else Thêm @endif mới gói credit</h4>
 
                                 @if(isset($goiCredit))
